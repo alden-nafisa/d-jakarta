@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D'JAKARTA | Home</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="module" src="assets/js/main.js"></script>
+  <!-- Hapus style duplikat, gunakan style.css saja -->
+  <link rel="icon" href="assets/mascot.svg" type="image/svg+xml">
+</head>
+
+<body style="display: flex; flex-direction: column; min-height: 100vh;"> <!-- Menambahkan flexbox untuk layout responsif -->
+  <nav class="navbar">
+    <a href="home.html" class="logo">
+      <img src="assets/images/D_JAKARTA.png" alt="D'JAKARTA Logo" style="height: auto; max-height: 50px;">
+    </a>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li class="has-dropdown"><a href="history.html">History</a>
+        <ul class="dropdown">
+          <li><a href="history_monas.html">History of Monas</a></li>
+          <li><a href="history_kotatua.html">History of Kota Tua</a></li>
+          <li><a href="history_jakarta.html">History of Jakarta</a></li>
+          <li><a href="history_jakartafood.html">History of Jakarta Food</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown"><a href="gallery.html">Gallery</a>
+        <ul class="dropdown">
+          <li><a href="gallery_monas.html">Monas</a></li>
+          <li><a href="gallery_kotatua.html">Kota Tua</a></li>
+        </ul>
+      </li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="map.html">Map</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li id="user-info" style="display: flex; align-items: center; gap: 0.5rem;">
+        <img id="user-avatar" src="" alt="Avatar" style="width: 50px; height: 50px; border-radius: 50%;">
+        <span id="user-name" style="font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 600;"></span>
+      </li>
+    </ul>
+    <div class="burger" id="burger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <section class="hero" style="position: relative; display: flex; align-items: center; min-height: 380px; background: #1aad5d url('assets/monas.svg') no-repeat right bottom/contain; border-radius: 0 0 2.5rem 2.5rem; margin-bottom: 2rem; overflow: hidden;">
+    <div style="flex: 1 1 400px; min-width: 280px; padding: 3.5rem 2rem 3.5rem 4vw; z-index: 2;">
+      <h1 style="font-family:'Poppins',sans-serif;font-size:2.8rem;font-weight:700;letter-spacing:-1px; margin-bottom:1.2rem;">Yo! Welcome to D'JAKARTA</h1>
+      <p style="max-width:600px;font-size:1.25rem;line-height:1.5; margin-bottom:2rem;">Jakarta vibes are lit! Dive into the city’s epic history, culture, and modern life. From Monas to Kota Tua, we got the deets to make your trip unforgettable. Let’s go!</p>
+      <a href="gallery.html" class="btn-primary" style="font-size:1.1rem; font-weight:600; padding:0.8rem 2.2rem; border-radius:2rem;">Peep the Gallery</a>
+    </div>
+  </section>
+  <section style="max-width:900px; margin:2.5rem auto 0 auto;">
+    <h2 style="text-align:center; font-size:2rem; margin-bottom:1.5rem; font-family:'Poppins',sans-serif;">About D'JAKARTA</h2>
+    <p style="line-height:1.8; font-size:1.1rem; color:#333; text-align:center;">
+      D'JAKARTA is a portal that explains all the vibes of Jakarta, from traditional to modern. You can explore its history, iconic landmarks, and Betawi cuisine that will make you fall in love with Jakarta. This is the place for those who want to learn more about the city.
+    </p>
+    <p style="line-height:1.8; font-size:1.1rem; color:#333; text-align:center;">
+      This website is not just for travelers but also for those who are simply curious. It offers tips, galleries, and insights that make your experience in Jakarta unforgettable. Get ready to fall in love with Jakarta through D'JAKARTA!
+    </p>
+  </section>
+  <section style="max-width:900px; margin:2.5rem auto 0 auto;">
+    <h2 style="text-align:center; font-size:2rem; margin-bottom:1.5rem; font-family:'Poppins',sans-serif;">FAQs - Spill the Tea</h2>
+    <div class="accordion" id="faqAccordion" style="box-shadow:0 2px 12px #0001; border-radius:1.2rem; overflow:hidden;">
+      <div class="accordion-item" style="border-bottom:1px solid #e5e5e5;">
+        <button class="accordion-title" style="width:100%;background:none;border:none;text-align:left;padding:1.2rem 2rem;font-size:1.1rem;font-family:'Poppins',sans-serif;display:flex;justify-content:space-between;align-items:center;cursor:pointer;transition:background 0.2s;">
+          <span>What’s D'JAKARTA?</span>
+          <span class="toggle-btn" style="font-size:1.3em;">+</span>
+        </button>
+        <div class="accordion-content" style="display:none;padding:0 2rem 1rem 2rem;font-size:1rem;color:#444;">D'JAKARTA is your go-to portal for exploring Jakarta’s coolest spots, like Monas and Kota Tua. We got guides, galleries, and more to keep you hyped!</div>
+      </div>
+      <div class="accordion-item" style="border-bottom:1px solid #e5e5e5;">
+        <button class="accordion-title" style="width:100%;background:none;border:none;text-align:left;padding:1.2rem 2rem;font-size:1.1rem;font-family:'Poppins',sans-serif;display:flex;justify-content:space-between;align-items:center;cursor:pointer;transition:background 0.2s;">
+          <span>What’s the vibe here?</span>
+          <span class="toggle-btn" style="font-size:1.3em;">+</span>
+        </button>
+        <div class="accordion-content" style="display:none;padding:0 2rem 1rem 2rem;font-size:1rem;color:#444;">We got everything from history and galleries to reviews, events, and transport tips. All the info you need to plan your Jakarta adventure!</div>
+      </div>
+      <div class="accordion-item" style="border-bottom:1px solid #e5e5e5;">
+        <button class="accordion-title" style="width:100%;background:none;border:none;text-align:left;padding:1.2rem 2rem;font-size:1.1rem;font-family:'Poppins',sans-serif;display:flex;justify-content:space-between;align-items:center;cursor:pointer;transition:background 0.2s;">
+          <span>Is this site English-friendly?</span>
+          <span class="toggle-btn" style="font-size:1.3em;">+</span>
+        </button>
+        <div class="accordion-content" style="display:none;padding:0 2rem 1rem 2rem;font-size:1rem;color:#444;">Totally! All content is in English so international visitors can vibe with us too.</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-title" style="width:100%;background:none;border:none;text-align:left;padding:1.2rem 2rem;font-size:1.1rem;font-family:'Poppins',sans-serif;display:flex;justify-content:space-between;align-items:center;cursor:pointer;transition:background 0.2s;">
+          <span>How do I hit up the owner?</span>
+          <span class="toggle-btn" style="font-size:1.3em;">+</span>
+        </button>
+        <div class="accordion-content" style="display:none;padding:0 2rem 1rem 2rem;font-size:1rem;color:#444;">Slide into the Contact page to drop your feedback or questions straight to the owner.</div>
+      </div>
+    </div>
+  </section>
+  <section style="max-width:900px; margin:2.5rem auto 0 auto;">
+    <h2 style="text-align:center; font-size:2rem; margin-bottom:1.5rem; font-family:'Poppins',sans-serif;">Jakarta’s Iconic Spots - The Lowdown</h2>
+    <div style="line-height:1.8; font-size:1.1rem; color:#333;">
+      <p style="margin-bottom:1rem;">Jakarta is buzzing with iconic spots that scream history and culture. Two must-visits are Monas and Kota Tua. Here’s the scoop:</p>
+      <ul style="line-height:2;">
+        <li><strong>Monas:</strong> The National Monument, a legit symbol of Indonesia’s independence, with a museum and killer views from the observation deck.</li>
+        <li><strong>Kota Tua:</strong> The Old Town, packed with colonial vibes, museums, street art, and foodie heaven.</li>
+      </ul>
+    </div>
+  </section>
+  <footer class="footer-main" style="gap: 0.5rem;">
+    <div class="footer-col">
+      <div class="footer-logo" style="font-size:1.5rem; font-weight:700; margin-bottom:0.5rem;">
+        <img src="assets/images/D'JAKARTA.png" alt="D'JAKARTA Logo" style="height: auto; max-height: 70px;">
+      </div>
+      <div style="font-size:1rem;">Explore Jakarta's best destinations.<br>By Alden Nafisa Hermawan<br>© 2025 D'JAKARTA. All rights reserved.</div>
+    </div>
+    <div class="footer-col" style="text-align: center;">
+      <strong style="font-size: 2.5rem;">Menu</strong><br>
+      <a href="home.html" style="font-size: 1.5rem;">Home</a><br>
+      <a href="history.html" style="font-size: 1.5rem;">About</a><br>
+      <a href="gallery.html" style="font-size: 1.5rem;">Gallery</a><br>
+      <a href="events.html" style="font-size: 1.5rem;">Events</a><br>
+      <a href="map.html" style="font-size: 1.5rem;">Map</a><br>
+      <a href="reviews.html" style="font-size: 1.5rem;">Reviews</a><br>
+    </div>
+    <div class="footer-col" style="min-width:220px; flex:1; display: flex; flex-direction: column; gap: 0.2rem; align-items: center;">
+      <img src="assets/icon_betawi.svg" alt="Betawi Icon" style="width: 400px; height: auto;">
+    </div>
+  </footer>
+  <script>
+    // Accordion/FAQ
+    document.querySelectorAll('.accordion-title').forEach(title => {
+      title.addEventListener('click', function() {
+        const item = this.closest('.accordion-item');
+        const content = item.querySelector('.accordion-content');
+        const btn = this.querySelector('.toggle-btn');
+        const isOpen = item.classList.contains('active');
+        // Tutup semua accordion lain
+        document.querySelectorAll('.accordion-item').forEach(i => {
+          i.classList.remove('active');
+          i.querySelector('.accordion-content').style.display = 'none';
+          i.querySelector('.toggle-btn').textContent = '+';
+        });
+        // Buka jika sebelumnya tertutup
+        if (!isOpen) {
+          item.classList.add('active');
+          content.style.display = 'block';
+          btn.textContent = '-';
+        }
+      });
+    });
+    // Dropdown menu for About & Gallery
+    document.querySelectorAll('.has-dropdown').forEach(function(item) {
+      item.addEventListener('mouseenter', function() {
+        this.querySelector('.dropdown').style.display = 'block';
+      });
+      item.addEventListener('mouseleave', function() {
+        this.querySelector('.dropdown').style.display = 'none';
+      });
+    });
+    // FAQ widget toggle
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const btn = item.querySelector('.toggle-btn');
+      const content = item.querySelector('.faq-content');
+      content.style.display = 'none';
+
+      btn.addEventListener('click', () => {
+        const isOpen = content.style.display === 'block';
+        content.style.display = isOpen ? 'none' : 'block';
+        btn.textContent = isOpen ? '+' : '-';
+      });
+    });
+    document.querySelectorAll('.accordion-item').forEach(item => {
+      const btn = item.querySelector('.toggle-btn');
+      const content = item.querySelector('.accordion-content');
+      content.style.display = 'none';
+
+      btn.addEventListener('click', () => {
+        const isOpen = item.classList.contains('active');
+        item.classList.toggle('active');
+        content.style.display = isOpen ? 'none' : 'block';
+        btn.textContent = isOpen ? '+' : '-';
+      });
+    });
+  </script>
+  <!-- Removed inline avatar and name logic -->
+  <script src="assets/js/avatar.js"></script>
+  <script src="assets/js/nameLibrary.js"></script>
+  <!-- Ensure avatar and name are dynamically set via respective scripts -->
+</body>
+</html>

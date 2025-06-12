@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Destination | Events</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+  <script src="assets/js/avatar.js"></script>
+  <script src="assets/js/nameLibrary.js"></script>
+  <link rel="icon" href="assets/mascot.svg" type="image/svg+xml">
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;"> <!-- Menambahkan flexbox untuk layout responsif -->
+  <nav class="navbar">
+    <a href="home.html" class="logo" style="font-family:'Poppins',sans-serif;">
+      <img src="assets/images/D_JAKARTA.png" alt="D'JAKARTA Logo" style="height: auto; max-height: 50px;">
+    </a>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li class="has-dropdown"><a href="history.html">History</a>
+        <ul class="dropdown">
+          <li><a href="history_monas.html">History of Monas</a></li>
+          <li><a href="history_kotatua.html">History of Kota Tua</a></li>
+          <li><a href="history_jakarta.html">History of Jakarta</a></li>
+          <li><a href="history_jakartafood.html">History of Jakarta Food</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown"><a href="gallery.html">Gallery</a>
+        <ul class="dropdown">
+          <li><a href="gallery_monas.html">Monas</a></li>
+          <li><a href="gallery_kotatua.html">Kota Tua</a></li>
+        </ul>
+      </li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="map.html">Map</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li id="user-info" style="display: flex; align-items: center; gap: 0.5rem;">
+        <img id="user-avatar" src="" alt="Avatar" style="width: 50px; height: 50px; border-radius: 50%;">
+        <span id="user-name" style="font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 600;"></span>
+      </li>
+    </ul>
+    <div class="burger" id="burger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <section class="hero" style="position: relative; display: flex; align-items: center; min-height: 380px; background: #0754a4 url('assets/entertainment.svg') no-repeat right bottom/contain; border-radius: 0 0 2.5rem 2.5rem; margin-bottom: 2rem; overflow: hidden; color: white;">
+    <div style="flex: 1 1 400px; min-width: 280px; padding: 3.5rem 2rem 3.5rem 4vw; z-index: 2;">
+      <h1 style="font-family:'Poppins',sans-serif;font-size:2.5rem;font-weight:700;letter-spacing:-1px; margin-bottom:1.2rem;">Jakarta Events</h1>
+      <p style="max-width:600px;font-size:1.15rem;line-height:1.5; margin-bottom:2rem;">Get hyped for the coolest events at Monas and Kota Tua! From cultural shows to food fests, we’ve got the scoop.</p>
+    </div>
+  </section>
+  <section style="padding:2rem;max-width:900px;margin:auto;">
+    <h2>1. MONAS (National Monument)</h2>
+    <p>📍 <strong>Location:</strong> Gambir, Central Jakarta</p>
+    <p>🕒 <strong>Operating Hours:</strong></p>
+    <ul>
+      <li><strong>Monas Park:</strong> 06:00–22:00 WIB (Every Day)</li>
+      <li><strong>Museum & Monas Peak:</strong> 08:00–16:00 WIB (Closed on Mondays)</li>
+    </ul>
+    <h3>Daily Activity Schedule</h3>
+    <ul>
+      <li><strong>Morning (06:00–09:00):</strong>
+        <ul>
+          <li>Morning exercise (walking, jogging, aerobics)</li>
+          <li>Visits by local & international tourists</li>
+        </ul>
+      </li>
+      <li><strong>Afternoon (10:00–15:00):</strong>
+        <ul>
+          <li>Explore the history museum & diorama</li>
+          <li>Elevator ride to Monas peak (if queues are short)</li>
+        </ul>
+      </li>
+      <li><strong>Evening-Night (16:00–22:00):</strong>
+        <ul>
+          <li>Photo ops with Monas lights</li>
+          <li>Food & souvenir vendors open (especially weekends)</li>
+        </ul>
+      </li>
+      <li><strong>Weekend (Saturday-Sunday):</strong>
+        <ul>
+          <li>Acoustic music vibes</li>
+          <li>Special events (festivals, exhibitions, or cultural shows)</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>2. KOTA TUA JAKARTA</h2>
+    <p>📍 <strong>Location:</strong> Fatahillah Park, West Jakarta</p>
+    <p>🕒 <strong>Operating Hours:</strong></p>
+    <ul>
+      <li><strong>Museum & Kota Tua Area:</strong> 08:00–17:00 WIB (Some museums closed on Mondays)</li>
+      <li><strong>Weekend (Saturday-Sunday):</strong> Busier with events</li>
+    </ul>
+    <h3>Daily Activity Schedule</h3>
+    <ul>
+      <li><strong>Morning (08:00–11:00):</strong>
+        <ul>
+          <li>Tourists visiting museums (Fatahillah Museum, Bank Indonesia, Wayang Museum)</li>
+          <li>Cycling or renting an ontel bike around Kota Tua</li>
+        </ul>
+      </li>
+      <li><strong>Afternoon (12:00–15:00):</strong>
+        <ul>
+          <li>Jakarta's traditional cuisine (es selendang mayang, kerak telor, etc.)</li>
+          <li>Photo ops with colonial buildings</li>
+        </ul>
+      </li>
+      <li><strong>Evening-Night (16:00–21:00):</strong>
+        <ul>
+          <li>Street performances (music, pantomime, traditional dance)</li>
+        </ul>
+      </li>
+      <li><strong>Weekend (Saturday-Sunday):</strong>
+        <ul>
+          <li>Culinary festivals & bazaars</li>
+          <li>Art & photography exhibitions</li>
+          <li>Theater performances or ondel-ondel shows</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Special Events at Monas & Kota Tua (Usually Weekend/Monthly)</h2>
+    <ul>
+      <li><strong>Art & Cultural Exhibitions:</strong> at Kota Tua Museum or Fatahillah Park area</li>
+      <li><strong>Jakarta Night Festival:</strong> music concerts & light shows at Monas</li>
+      <li><strong>Car Free Day:</strong> Sunday morning, around Monas & nearby areas</li>
+      <li><strong>Heritage Walk:</strong> guided historical tours in Kota Tua</li>
+    </ul>
+  </section>
+  <footer class="footer-main" style="gap: 0.5rem;">
+    <div class="footer-col">
+      <div class="footer-logo" style="font-size:1.5rem; font-weight:700; margin-bottom:0.5rem;">
+        <img src="assets/images/D'JAKARTA.png" alt="D'JAKARTA Logo" style="height: auto; max-height: 70px;">
+      </div>
+      <div style="font-size:1rem;">Explore Jakarta's best destinations.<br>By Alden Nafisa Hermawan<br>© 2025 D'JAKARTA. All rights reserved.</div>
+    </div>
+    <div class="footer-col" style="text-align: center;">
+      <strong style="font-size: 2.5rem;">Menu</strong><br>
+      <a href="home.html" style="font-size: 1.5rem;">Home</a><br>
+      <a href="history.html" style="font-size: 1.5rem;">About</a><br>
+      <a href="gallery.html" style="font-size: 1.5rem;">Gallery</a><br>
+      <a href="events.html" style="font-size: 1.5rem;">Events</a><br>
+      <a href="map.html" style="font-size: 1.5rem;">Map</a><br>
+      <a href="reviews.html" style="font-size: 1.5rem;">Reviews</a><br>
+    </div>
+    <div class="footer-col" style="min-width:220px; flex:1; display: flex; flex-direction: column; gap: 0.2rem; align-items: center;">
+      <img src="assets/icon_betawi.svg" alt="Betawi Icon" style="width: 400px; height: auto;">
+    </div>
+  </footer>
+  <script>
+// Apply avatar and name
+const avatarElement = document.getElementById('user-avatar');
+const nameElement = document.getElementById('user-name');
+if (avatarElement) avatarElement.src = localStorage.getItem('userAvatar');
+if (nameElement) nameElement.textContent = localStorage.getItem('userName');
+  </script>
+</body>
+</html>

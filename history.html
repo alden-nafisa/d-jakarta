@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Destination | About</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+  <script src="assets/js/avatar.js"></script>
+  <script src="assets/js/nameLibrary.js"></script>
+  <link rel="icon" href="assets/mascot.svg" type="image/svg+xml">
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;"> <!-- Menambahkan flexbox untuk layout responsif -->
+  <nav class="navbar">
+    <a href="home.html" class="logo" style="font-family:'Poppins',sans-serif;">
+      <img src="assets/images/D_JAKARTA.png" alt="D'JAKARTA Logo" style="height: auto; max-height: 50px;">
+    </a>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li class="has-dropdown"><a href="history.html">History</a>
+        <ul class="dropdown">
+          <li><a href="history_monas.html">History of Monas</a></li>
+          <li><a href="history_kotatua.html">History of Kota Tua</a></li>
+          <li><a href="history_jakarta.html">History of Jakarta</a></li>
+          <li><a href="history_jakartafood.html">History of Jakarta Food</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown"><a href="gallery.html">Gallery</a>
+        <ul class="dropdown">
+          <li><a href="gallery_monas.html">Monas</a></li>
+          <li><a href="gallery_kotatua.html">Kota Tua</a></li>
+        </ul>
+      </li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="map.html">Map</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li id="user-info" style="display: flex; align-items: center; gap: 0.5rem;">
+        <img id="user-avatar" src="" alt="Avatar" style="width: 50px; height: 50px; border-radius: 50%;">
+        <span id="user-name" style="font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 600;"></span>
+      </li>
+    </ul>
+    <div class="burger" id="burger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <section class="hero" style="position: relative; display: flex; align-items: center; min-height: 380px; background: #e32e95 url('assets/model.svg') no-repeat right bottom/contain; border-radius: 0 0 2.5rem 2.5rem; margin-bottom: 2rem; overflow: hidden;">
+    <div style="flex: 1 1 400px; min-width: 280px; padding: 3.5rem 2rem 3.5rem 4vw; z-index: 2;">
+      <h1 style="font-family:'Poppins',sans-serif;font-size:2.5rem;font-weight:700;letter-spacing:-1px; margin-bottom:1.2rem;">About D'JAKARTA</h1>
+      <p style="max-width:600px;font-size:1.15rem;line-height:1.5; margin-bottom:2rem;">Get the lowdown on D'JAKARTA—our vision, mission, and why we’re all about sharing Jakarta’s awesomeness with you.</p>
+    </div>
+  </section>
+  <section style="max-width:1100px;margin:2.5rem auto 0 auto;">
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;">
+      <div class="widget-card" style="border:5px solid #1aad5d;">
+        <h2 style="font-family:'Poppins',sans-serif;">History of Monas</h2>
+        <p>Monas (National Monument) is a symbol of Indonesia's independence and pride. Dive into its story, construction, and meaning for the nation.</p>
+        <a href="history_monas.html" class="btn-primary">Learn More</a>
+      </div>
+      <div class="widget-card" style="border:5px solid #ffb600;">
+        <h2 style="font-family:'Poppins',sans-serif;">History of Kota Tua</h2>
+        <p>Kota Tua (Old Town) is the historical heart of Jakarta, packed with Dutch colonial buildings and rich cultural heritage. Explore its fascinating past.</p>
+        <a href="history_kotatua.html" class="btn-primary">Learn More</a>
+      </div>
+      <div class="widget-card" style="border:5px solid #fd351c;">
+        <h2 style="font-family:'Poppins',sans-serif;">History of Jakarta</h2>
+        <p>Discover Jakarta’s epic journey from Sunda Kalapa to the bustling metropolis it is today.</p>
+        <a href="history_jakarta.html" class="btn-primary">Learn More</a>
+      </div>
+      <div class="widget-card" style="border:5px solid #0754a4;">
+        <h2 style="font-family:'Poppins',sans-serif;">History of Jakarta Food</h2>
+        <p>Explore Jakarta’s foodie scene, from Betawi classics to street food legends.</p>
+        <a href="history_jakartafood.html" class="btn-primary">Learn More</a>
+      </div>
+    </div>
+  </section>
+  <section style="padding:2rem;max-width:700px;margin:auto;">
+    <h2 style="text-align:center;">Why Pull Up to Monas & Kota Tua?</h2>
+    <ul style="line-height:2;">
+      <li><strong>Monas:</strong> The National Monument, repping Indonesia's independence vibes, with a dope museum and a lit observation deck.</li>
+      <li><strong>Kota Tua:</strong> The OG Old Town, packed with colonial history, artsy streets, and foodie heaven. A whole vibe!</li>
+    </ul>
+  </section>
+  <footer class="footer-main" style="gap: 0.5rem;">
+    <div class="footer-col">
+      <div class="footer-logo" style="font-size:1.5rem; font-weight:700; margin-bottom:0.5rem;">
+        <img src="assets/images/D'JAKARTA.png" alt="D'JAKARTA Logo" style="height: auto; max-height: 70px;">
+      </div>
+      <div style="font-size:1rem;">Explore Jakarta's best destinations.<br>By Alden Nafisa Hermawan<br>© 2025 D'JAKARTA. All rights reserved.</div>
+    </div>
+    <div class="footer-col" style="text-align: center;">
+      <strong style="font-size: 2.5rem;">Menu</strong><br>
+      <a href="home.html" style="font-size: 1.5rem;">Home</a><br>
+      <a href="history.html" style="font-size: 1.5rem;">About</a><br>
+      <a href="gallery.html" style="font-size: 1.5rem;">Gallery</a><br>
+      <a href="events.html" style="font-size: 1.5rem;">Events</a><br>
+      <a href="map.html" style="font-size: 1.5rem;">Map</a><br>
+      <a href="reviews.html" style="font-size: 1.5rem;">Reviews</a><br>
+    </div>
+    <div class="footer-col" style="min-width:220px; flex:1; display: flex; flex-direction: column; gap: 0.2rem; align-items: center;">
+      <img src="assets/icon_betawi.svg" alt="Betawi Icon" style="width: 400px; height: auto;">
+    </div>
+  </footer>
+  <script>
+// Apply avatar and name
+const avatarElement = document.getElementById('user-avatar');
+const nameElement = document.getElementById('user-name');
+if (avatarElement) avatarElement.src = localStorage.getItem('userAvatar');
+if (nameElement) nameElement.textContent = localStorage.getItem('userName');
+  </script>
+</body>
+</html>

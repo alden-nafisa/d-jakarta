@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Destination | Map & Transport</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+  <script src="assets/js/avatar.js"></script>
+  <script src="assets/js/nameLibrary.js"></script>
+  <style>
+    .infographic {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .infocard {
+      background: #F7F7F7;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px #0001;
+      padding: 1.5rem 2rem;
+      max-width: 350px;
+      flex: 1 1 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .infocard h3 {
+      color: #1A4D2E;
+      margin-bottom: 0.5rem;
+    }
+    .infocard ul {
+      padding-left: 1.2rem;
+      margin: 0;
+      line-height: 2;
+    }
+    .infocard .icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .footer-main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 2rem;
+      background-color: #1F2A2F; /* charcoal */
+      color: #fff;
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+      gap: 1rem;
+    }
+    .footer-col {
+      flex: 1 1 200px;
+      margin: 1rem;
+    }
+    .footer-logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #9bcbe9; /* steel blue light */
+      letter-spacing: 1px;
+    }
+    .footer-col strong {
+      font-size: 1.1rem;
+      color: #fff;
+    }
+    .footer-col a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.2rem;
+      transition: color 0.2s;
+    }
+    .footer-col a:hover {
+      color: #9bcbe9;
+    }
+    .footer-news {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    .footer-news input {
+      flex: 1;
+      min-width: 120px;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 2rem;
+      background: #fff;
+      color: #1F2A2F;
+      font-size: 1rem;
+      outline: none;
+    }
+    .footer-news button {
+      min-width: 120px;
+      padding: 0.5rem 1.5rem;
+      border: none;
+      border-radius: 2rem;
+      background-color: #9bcbe9;
+      color: #222;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+      box-shadow: none;
+    }
+    .footer-news button:hover {
+      background-color: #7793a3;
+    }
+    .faq-widget {
+      margin-top: 2rem;
+    }
+    .faq-item {
+      background: #F9F9F9;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .faq-title {
+      background: #1F2A2F;
+      color: #fff;
+      padding: 1rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+    .faq-content {
+      padding: 1rem;
+      display: none;
+    }
+    .toggle-btn {
+      background: none;
+      border: none;
+      color: #9bcbe9;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    .map-section h3 {
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  </style>
+  <link rel="icon" href="assets/mascot.svg" type="image/svg+xml">
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;"> <!-- Menambahkan flexbox untuk layout responsif -->
+  <nav class="navbar">
+    <a href="home.html" class="logo" style="font-family:'Poppins',sans-serif;">
+      <img src="assets/images/D_JAKARTA.png" alt="D'JAKARTA Logo" style="height: auto; max-height: 50px;">
+    </a>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li class="has-dropdown"><a href="history.html">History</a>
+        <ul class="dropdown">
+          <li><a href="history_monas.html">History of Monas</a></li>
+          <li><a href="history_kotatua.html">History of Kota Tua</a></li>
+          <li><a href="history_jakarta.html">History of Jakarta</a></li>
+          <li><a href="history_jakartafood.html">History of Jakarta Food</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown"><a href="gallery.html">Gallery</a>
+        <ul class="dropdown">
+          <li><a href="gallery_monas.html">Monas</a></li>
+          <li><a href="gallery_kotatua.html">Kota Tua</a></li>
+        </ul>
+      </li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="map.html">Map</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li id="user-info" style="display: flex; align-items: center; gap: 0.5rem;">
+        <img id="user-avatar" src="" alt="Avatar" style="width: 50px; height: 50px; border-radius: 50%;">
+        <span id="user-name" style="font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 600;"></span>
+      </li>
+    </ul>
+    <div class="burger" id="burger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <section class="hero" style="position: relative; display: flex; align-items: center; min-height: 380px; background: #ffb600 url('assets/bajaj.svg') no-repeat right bottom/contain; border-radius: 0 0 2.5rem 2.5rem; margin-bottom: 2rem; overflow: hidden;">
+    <div style="flex: 1 1 400px; min-width: 280px; padding: 3.5rem 2rem 3.5rem 4vw; z-index: 2;">
+      <h1 style="font-family:'Poppins',sans-serif;font-size:2.5rem;font-weight:700;letter-spacing:-1px; margin-bottom:1.2rem;">Jakarta Map</h1>
+      <p style="max-width:600px;font-size:1.15rem;line-height:1.5; margin-bottom:2rem;">Lost? No worries! Use our map to find the hottest spots, attractions, and transport options in Jakarta. Let’s roll!</p>
+    </div>
+  </section>
+  <section class="map-section" style="padding:2rem;max-width:1000px;margin:auto;">
+    <h2 style="text-align:center; font-size:2.5rem;">Google Maps</h2>
+    <div class="maps-row" style="display:flex;flex-direction:row;gap:2rem;justify-content:center;align-items:flex-start;">
+      <div style="flex:1 1 0;min-width:0;max-width:50%;display:flex;flex-direction:column;align-items:center;">
+        <h3>Monas</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666427022623!2d106.82457787498994!3d-6.1753923938120145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sMonas!5e0!3m2!1sen!2sid!4v1748213079170!5m2!1sen!2sid" width="95%" height="350" style="border:0; border-radius:1rem;display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div style="flex:1 1 0;min-width:0;max-width:50%;display:flex;flex-direction:column;align-items:center;">
+        <h3>Kota Tua</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.4837517382175!2d106.81129769839478!3d-6.1350687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec2a940017ed%3A0xdfce12d4a0938133!2sWisata%20Kota%20Tua%20Jakarta!5e0!3m2!1sen!2sid!4v1748213186443!5m2!1sen!2sid" width="95%" height="350" style="border:0; border-radius:1rem;display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+  <section style="padding:2rem;max-width:1000px;margin:auto;">
+    <h2 style="text-align:center; font-size:2rem; margin-bottom:1.5rem; font-family:'Poppins',sans-serif;">Public Transport Info - The Essentials</h2>
+    <div class="faq-widget">
+      <div class="faq-item">
+        <div class="faq-title">TransJakarta <button class="toggle-btn">+</button></div>
+        <div class="faq-content">
+          <ul>
+            <li>Corridor 1: Blok M - Kota, stop at Monas/Balaikota.</li>
+            <li>Corridor 2: Pulogadung - Harmoni, stop at Harmoni.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-title">KRL Commuter Line <button class="toggle-btn">+</button></div>
+        <div class="faq-content">
+          <ul>
+            <li>Stop at Gondangdia or Juanda for Monas.</li>
+            <li>Stop at Jakarta Kota Station for Kota Tua.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-title">MRT Jakarta <button class="toggle-btn">+</button></div>
+        <div class="faq-content">
+          <ul>
+            <li>Stop at Bundaran HI, continue with TransJakarta or taxi.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="padding:2rem;max-width:1000px;margin:auto;">
+    <h2 style="text-align:center; font-size:2rem; margin-bottom:1.5rem; font-family:'Poppins',sans-serif;">Jakarta Vibes</h2>
+    <p style="text-align:center; max-width:800px; margin:auto; font-size:1.1rem; line-height:1.6;">
+      Jakarta is the ultimate mix of history, culture, and modern life. From iconic landmarks to foodie adventures, this city’s got it all. Dive in and explore!
+    </p>
+    <ul style="line-height:2;">
+      <li><strong>Monas:</strong> The National Monument, symbolizing Indonesia's independence, with a museum and observation deck.</li>
+      <li><strong>Kota Tua:</strong> The Old Town, rich in colonial history, museums, street art, and culinary delights.</li>
+    </ul>
+  </section>
+  <footer class="footer-main" style="gap: 0.5rem;">
+    <div class="footer-col">
+      <div class="footer-logo" style="font-size:1.5rem; font-weight:700; margin-bottom:0.5rem;">
+        <img src="assets/images/D'JAKARTA.png" alt="D'JAKARTA Logo" style="height: auto; max-height: 70px;">
+      </div>
+      <div style="font-size:1rem;">Explore Jakarta's best destinations.<br>By Alden Nafisa Hermawan<br>© 2025 D'JAKARTA. All rights reserved.</div>
+    </div>
+    <div class="footer-col" style="text-align: center;">
+      <strong style="font-size: 2.5rem;">Menu</strong><br>
+      <a href="home.html" style="font-size: 1.5rem;">Home</a><br>
+      <a href="history.html" style="font-size: 1.5rem;">About</a><br>
+      <a href="gallery.html" style="font-size: 1.5rem;">Gallery</a><br>
+      <a href="events.html" style="font-size: 1.5rem;">Events</a><br>
+      <a href="map.html" style="font-size: 1.5rem;">Map</a><br>
+      <a href="reviews.html" style="font-size: 1.5rem;">Reviews</a><br>
+    </div>
+    <div class="footer-col" style="min-width:220px; flex:1; display: flex; flex-direction: column; gap: 0.2rem; align-items: center;">
+      <img src="assets/icon_betawi.svg" alt="Betawi Icon" style="width: 400px; height: auto;">
+    </div>
+  </footer>
+  <script>
+    // FAQ widget toggle (warna dan ikon tetap seperti sebelumnya)
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const btn = item.querySelector('.toggle-btn');
+      const content = item.querySelector('.faq-content');
+      content.style.display = 'none';
+      btn.addEventListener('click', () => {
+        const isOpen = content.style.display === 'block';
+        content.style.display = isOpen ? 'none' : 'block';
+        btn.textContent = isOpen ? '+' : '-';
+      });
+    });
+  </script>
+</body>
+</html>

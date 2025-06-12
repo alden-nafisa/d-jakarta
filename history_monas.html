@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sejarah Monas | D'JAKARTA</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+  <script src="assets/js/avatar.js"></script>
+  <link rel="icon" href="assets/mascot.svg" type="image/svg+xml">
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;"> <!-- Menambahkan flexbox untuk layout responsif -->
+  <nav class="navbar">
+    <a href="home.html" class="logo">
+      <img src="assets/images/D_JAKARTA.png" alt="D'JAKARTA Logo" style="height: auto; max-height: 50px;">
+    </a>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li class="has-dropdown"><a href="history.html">History</a>
+        <ul class="dropdown">
+          <li><a href="history_monas.html">History of Monas</a></li>
+          <li><a href="history_kotatua.html">History of Kota Tua</a></li>
+          <li><a href="history_jakarta.html">History of Jakarta</a></li>
+          <li><a href="history_jakartafood.html">History of Jakarta Food</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown"><a href="gallery.html">Gallery</a>
+        <ul class="dropdown">
+          <li><a href="gallery_monas.html">Monas</a></li>
+          <li><a href="gallery_kotatua.html">Kota Tua</a></li>
+        </ul>
+      </li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="map.html">Map</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li id="user-info" style="display: flex; align-items: center; gap: 0.5rem;">
+        <img id="user-avatar" src="" alt="Avatar" style="width: 50px; height: 50px; border-radius: 50%;">
+        <span id="user-name" style="font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 600;"></span>
+      </li>
+    </ul>
+    <div class="burger" id="burger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <section class="hero" style="position: relative; display: flex; align-items: center; min-height: 380px; background: #1aad5d url('assets/monas.svg') no-repeat right bottom/contain; border-radius: 0 0 2.5rem 2.5rem; margin-bottom: 2rem; overflow: hidden;">
+    <div style="flex: 1 1 400px; min-width: 280px; padding: 3.5rem 2rem 3.5rem 4vw; z-index: 2;">
+      <h1 style="font-family:'Poppins',sans-serif;font-size:2.5rem;font-weight:700;letter-spacing:-1px; margin-bottom:1.2rem;">History of Monas</h1>
+      <p style="max-width:600px;font-size:1.15rem;line-height:1.5; margin-bottom:2rem;">Learn more about the history of Monas, the National Monument of Indonesia.</p>
+    </div>
+  </section>
+  <section style="max-width:900px;margin:2.5rem auto 0 auto;">
+    <div class="widget-card">
+      <h2>Monas: National Pride</h2>
+      <p>Monas (Monumen Nasional) was built to commemorate the struggle for Indonesian independence. Construction began in 1961 and was completed in 1975. The monument stands 132 meters tall and is topped with a flame coated in gold foil, symbolizing the spirit of freedom.</p>
+      <p>The National Monument (Monas) in Jakarta, Indonesia, is a 132-meter (433-foot) tower built to commemorate the country's struggle for independence. Constructed between 1961 and 1975 under President Sukarno, the monument is topped with a flame-shaped bronze plated in gold, symbolizing the spirit of freedom. The design, by architects Soedarsono and Frederich Silaban, combines elements of Lingga and Yoni, representing masculinity and femininity in Indonesian culture. The base houses a historical museum and a hall displaying the original Declaration of Independence, while an observation deck offers panoramic views of Jakarta.</p>
+      <p>Monas is a popular tourist attraction and a symbol of national pride, surrounded by a large park known as Merdeka Square. The monument's construction faced delays due to political instability and funding issues, but it was finally completed under President Suharto. The gold-coated flame, weighing over 14 tons, was donated by Indonesian entrepreneurs. Monas serves not only as a historical landmark but also as a venue for national ceremonies and public recreation, reflecting Indonesia's independence and cultural identity.</p>
+      <a href="https://en.wikipedia.org/wiki/National_Monument_(Indonesia)" class="btn-primary" target="_blank">Learn More</a>
+    </div>
+    <div class="widget-card">
+      <h2>Explore Jakarta</h2>
+      <p>Discover the rich history and culture of Jakarta through its famous landmarks.</p>
+      <ul style="line-height:2;">
+        <li><strong>Monas:</strong> The National Monument, symbolizing Indonesia's independence, with a museum and observation deck.</li>
+        <li><strong>Kota Tua:</strong> The Old Town, rich in colonial history, museums, street art, and culinary delights.</li>
+      </ul>
+    </div>
+  </section>
+  <footer class="footer-main" style="gap: 0.5rem;">
+    <div class="footer-col">
+      <div class="footer-logo" style="font-size:1.5rem; font-weight:700; margin-bottom:0.5rem;">
+        <img src="assets/images/D'JAKARTA.png" alt="D'JAKARTA Logo" style="height: auto; max-height: 70px;">
+      </div>
+      <div style="font-size:1rem;">Explore Jakarta's best destinations.<br>By Alden Nafisa Hermawan<br>© 2025 D'JAKARTA. All rights reserved.</div>
+    </div>
+    <div class="footer-col" style="text-align: center;">
+      <strong style="font-size: 2.5rem;">Menu</strong><br>
+      <a href="home.html" style="font-size: 1.5rem;">Home</a><br>
+      <a href="history.html" style="font-size: 1.5rem;">About</a><br>
+      <a href="gallery.html" style="font-size: 1.5rem;">Gallery</a><br>
+      <a href="events.html" style="font-size: 1.5rem;">Events</a><br>
+      <a href="map.html" style="font-size: 1.5rem;">Map</a><br>
+      <a href="reviews.html" style="font-size: 1.5rem;">Reviews</a><br>
+    </div>
+    <div class="footer-col" style="min-width:220px; flex:1; display: flex; flex-direction: column; gap: 0.2rem; align-items: center;">
+      <img src="assets/icon_betawi.svg" alt="Betawi Icon" style="width: 400px; height: auto;">
+    </div>
+  </footer>
+</body>
+</html>
